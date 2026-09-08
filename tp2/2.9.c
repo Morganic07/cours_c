@@ -14,4 +14,6 @@ int main() {
 
     printf("a = %d\nb = %d\nc = %d\n", a, b, c);
     return 0;
+    
+
 }

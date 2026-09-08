@@ -4,7 +4,8 @@ int main() {
     float f;
     float x;
     
-    scanf("%f", &x);
+    scanf("
+        %f", &x);
 
     
     f = 3*x+4;

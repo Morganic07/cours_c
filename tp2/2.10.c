@@ -54,4 +54,5 @@ int alternative(){
     last = start + (nb_termes-1)*raison;
     somme = (start + last) * nb_termes / 2;
 
+    
 }

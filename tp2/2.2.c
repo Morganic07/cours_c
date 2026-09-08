@@ -8,6 +8,7 @@ int main() {
     scanf("%f", &nb2);
 
     printf("nb1 vaut %d ; nb2 vaut %f\n", nb1, nb2);
+    
 
     return 0;
 }
