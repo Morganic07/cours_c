@@ -8,5 +8,13 @@ int main(){
 
     printf("%d", div);
 
+    if (div*2==nombre) {
+        printf("pair");
+    }
+    
+    else{
+        printf("impair");
+    }
+
     return 0;
 }
