@@ -7,7 +7,7 @@ int main(){
     scanf("%d", &annee);
 
 
-    if (annee%4==0 && annee%400==0){
+    if (annee%4==0 && annee%100!=0 || annee%400==0){
         printf("bissextile");
     }
 
