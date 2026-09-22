@@ -7,9 +7,9 @@ int main(){
 
     scanf("%d", &chiffre);
 
-    modulo = chiffre%2;
+    int modulo = chiffre%2;
 
-    if modulo == 0{
+    if (modulo == 0){
         printf("pair");
     }
 
