@@ -9,14 +9,13 @@ int main(){
 
     int nombre_tour = 0;
 
-    while (guess != nombre){
+    while (guess != nombre && nombre_tour <10){
 
         nombre_tour +=1;
 
         printf("tour %d , devinez \n", nombre_tour);
         scanf("%d", & guess);
 
-        if (nombre_tour>10) break;
 
         if (guess == nombre && nombre_tour==1) printf("bravo tricheur");
 
@@ -26,7 +25,7 @@ int main(){
 
         else if (guess == nombre && nombre_tour==10) printf("mouais");
 
-        else printf("tié nul");
+        else if (nombre_tour >= 10) printf("tié nul");
 
 
     }
