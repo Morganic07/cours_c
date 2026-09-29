@@ -7,9 +7,13 @@ int main(){
 
     int n = 3;
 
-    result = x**n;
+    int result =1;
 
-    printf("%d", result);
+    
+    for (int i=1; i<=n; i+=1){
+        result *= x;
+        printf("%d \n", result);
+    }
 
     return 0;
 }
