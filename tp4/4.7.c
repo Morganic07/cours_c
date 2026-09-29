@@ -3,7 +3,7 @@
 
 int main(){
     int longueur = 5;
-    int largeur = 3;
+    int largeur = 10;
 
     for (int i =1; i<=longueur; i++){
 
