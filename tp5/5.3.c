@@ -7,13 +7,16 @@ int main(){
 
     int guess;
 
-    int nombre_tour = 0
+    int nombre_tour = 0;
 
     while (guess != nombre){
 
         nombre_tour +=1;
+
         printf("tour %d , devinez \n", nombre_tour);
         scanf("%d", & guess);
+
+        if (nombre_tour>10) break;
 
         if (guess == nombre && nombre_tour==1) printf("bravo tricheur");
 
