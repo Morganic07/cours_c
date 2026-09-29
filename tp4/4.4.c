@@ -2,7 +2,7 @@
 
 int algo1(){
 
-    for (int n=1; n<=100; n++){
+    for (int n=0; n<=100; n++){
 
         if (n%2==0) printf("%d\n", n);
     }
@@ -13,7 +13,7 @@ int algo1(){
 
 int algo2(){
 
-    for (int n=0; n<=100; n+2) printf("%d\n", n);
+    for (int n=0; n<=100; n+=2) printf("%d\n", n);
 
 
     return 0;
