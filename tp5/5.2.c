@@ -7,9 +7,7 @@ int main(){
 
     do {    
         printf("voulez-vous continuer ? \n");
-        scanf("%d", choix);
-
-
+        scanf("%d", &choix);
 
     } while (choix !=0);
 
