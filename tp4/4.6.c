@@ -3,16 +3,20 @@
 
 int main(){
 
-    int u1 = 2;
-    int u2 =1;
+    int u0 = 2;
+    int u1 =1;
 
     int lucas;
 
-    for (int i =1; i<=20; i++){
-        lucas = u1 + u2;
-        printf("u", i, "= ", lucas);
-        u1 = u2;
-        u2 = lucas;
+    printf("u0 = %d\n", u0);
+        printf("u1 = %d\n", u1);
+
+
+    for (int i =2; i<=20; i++){
+        lucas = u0 + u1;
+        printf("u%d = %d \n", i, lucas);
+        u0 = u1;
+        u1 = lucas;
     }
 
 
