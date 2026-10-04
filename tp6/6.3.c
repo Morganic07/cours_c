@@ -13,7 +13,9 @@ int main(){
     int valeur;
 
     do{
+        printf("\nrentrez un type\n");
         scanf("%d", &type);
+        printf("rentrez une valeur\n");
         scanf("%d", &valeur);
         printf("%d",volume(type, valeur));
     }while (type !=0);
@@ -31,7 +33,7 @@ float volumeCylindre(int hauteur, int rayon){
 }
 
 float volumeSphere(int rayon){
-    return 3/4*3.14159265358979323846*rayon*rayon*rayon;
+    return (3.0/4.0)*3.14159265358979323846*rayon*rayon*rayon;
 }
 
 
