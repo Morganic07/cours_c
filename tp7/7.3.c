@@ -14,6 +14,8 @@ int main(){
 
 
     amplitude(tab);
+    moyenne(tab);
+
 
     return 0;
 }
@@ -35,15 +37,11 @@ void amplitude(int tab[5]){
     printf("amplitude : %d \n", max-min);
 }
 
-void moyenne(int tab[5]){
-
-}
-
 
 
 void moyenne(int tab[5]){
 
-    int compteur;
+    int compteur = 0;
     
     for (int i = 0; i<5; i++){
         compteur += tab[i];
@@ -52,6 +50,6 @@ void moyenne(int tab[5]){
 
     float moyenne = compteur/5;
 
-    printf("moyenne : %d\n", moyenne);
+    printf("moyenne : %f\n", moyenne);
 
 }
