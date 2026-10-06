@@ -7,7 +7,7 @@ int main(){
 
     for (int i=0; i<5;i++){
         printf("rentrez une valeur case %d: \n", i);
-        scanf("%d", &i);
+        scanf("%d", &tab[i]);
     }
 
 
@@ -30,7 +30,7 @@ int main(){
             valeur_min = tab[j];
             indice_min = j;
         }
-        else if (valeur_max > tab[j]){
+        else if (valeur_max < tab[j]){
             valeur_max = tab[j];
             indice_max = j;
         }
