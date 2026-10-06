@@ -14,11 +14,11 @@ int main(){
 
 
 
-    int valeur_min = tab[i];
+    int valeur_min = tab[0];
 
     int indice_min;
 
-    int valeur_max = tab[i];
+    int valeur_max = tab[0];
 
     int indice_max;
 
@@ -26,13 +26,13 @@ int main(){
 
     for (int j=0; j<5; j++){
 
-        if (valeur_min > tab[i+1]){
-            valeur_min = tab[i+1];
-            indice_min = i;
+        if (valeur_min > tab[j]){
+            valeur_min = tab[j];
+            indice_min = j;
         }
-        else if (valeur_max > tab[i+1]){
-            valeur_max = tab[i+1];
-            indice_max = i;
+        else if (valeur_max > tab[j]){
+            valeur_max = tab[j];
+            indice_max = j;
         }
     }
 
