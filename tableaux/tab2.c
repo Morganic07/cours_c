@@ -15,7 +15,8 @@ void affiche_tab(float t[]){
 }
 
 int main(){
-
-
+    float tab[100];
+    init_tab(tab);
+    affiche_tab(tab);
     return 0;
 }
