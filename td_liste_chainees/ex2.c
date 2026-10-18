@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct Chainon{
+    int valeur;
+    struct Chainon *suivant;
+}Chainon;
+
 
 void creerListe(Chainon **premier);
 void ajouterElement(Chainon **premier, int valeur);
 
 
-typedef struct Chainon{
-    int valeur;
-    struct Chainon *suivant;
-}Chainon;
 
 
 
@@ -18,6 +19,8 @@ int main(){
     Chainon *premier; //sert à stocker l'adresse du premier element de la liste
     creerListe(&premier);
     ajouterElement(&premier, 7);
+
+    free(premier);
 
     return 0;
 }
