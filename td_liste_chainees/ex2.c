@@ -8,7 +8,7 @@ typedef struct Chainon{
 
 
 void creerListe(Chainon **premier);
-void ajouterElement(Chainon **premier, int valeur);
+void ajouterElement(Chainon **premier, int user_valeur);
 
 
 
@@ -33,10 +33,10 @@ void creerListe(Chainon **premier){
 }
 
 
-void ajouterElement(Chainon **premier, int valeur){
+void ajouterElement(Chainon **premier, int user_valeur){
     Chainon *nouveau = malloc(sizeof(Chainon));
 
-    nouveau -> valeur = valeur; 
+    nouveau -> valeur = user_valeur; 
     // -> revient à faire (*nouveau).valeur
     //on va dans la case valeur du nouveau chainon pour mettre 7
 
@@ -48,7 +48,7 @@ void ajouterElement(Chainon **premier, int valeur){
 
     *premier = nouveau;
     //mise à jour de la variable premier du main 
-    //premier ne pointe plus vers NULL mais vers l'adresse du chainon nouveau qui vient detre crée 
+    //premier ne pointe plus vers NULL mais vers l'adresse du chainon nouveau qui vient d'être créer
 } 
 //il faut faire dans cet ordre sinon on écrase le pointeur *premier avant d'avoir sauvegardé l'adresse de l'ancien premier chainon, 
 //ce qui fera perdre l'acces à tout le reste de la liste
