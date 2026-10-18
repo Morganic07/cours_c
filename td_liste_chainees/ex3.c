@@ -6,6 +6,9 @@ typedef struct Chainon{
     struct Chainon *suivant;
 }Chainon;
 
+void creerListe(Chainon **premier);
+void ajouterElement(Chainon **premier, int user_valeur);
+int nombreElements(Chainon *premier);
 
 
 int main(){
@@ -34,9 +37,9 @@ void ajouterElement(Chainon **premier, int user_valeur){
     Chainon *nouveau = malloc(sizeof(Chainon));
 
 
-    premier->valeur = user_valeur;
+    nouveau->valeur = user_valeur;
 
-    premier->suivant = &premier;
+    nouveau->suivant = *premier;
 
     *premier = nouveau;
 }
@@ -49,7 +52,7 @@ int nombreElements(Chainon *premier){
     Chainon *temporaire = premier;
     //creation d'un pointeur temporaire qui va parcourir la liste dans la boucle while
    
-    while (temporaire.valeur != NULL){
+    while (temporaire != NULL){
         compteur++;
         temporaire = (*temporaire).suivant;
     }
