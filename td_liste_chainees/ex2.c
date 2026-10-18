@@ -49,4 +49,6 @@ void ajouterElement(Chainon **premier, int valeur){
     *premier = nouveau;
     //mise à jour de la variable premier du main 
     //premier ne pointe plus vers NULL mais vers l'adresse du chainon nouveau qui vient detre crée 
-}
+} 
+//il faut faire dans cet ordre sinon on écrase le pointeur *premier avant d'avoir sauvegardé l'adresse de l'ancien premier chainon, 
+//ce qui fera perdre l'acces à tout le reste de la liste
